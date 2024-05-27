@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book ticket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <img src="https://e1.pxfuel.com/desktop-wallpaper/621/679/desktop-wallpaper-3840x2160-railway-train-station-sunset-waiting-u-16-9-backgrounds-railway.jpg" alt="">
+    </div>
+    <form>
+        <div class="possition">
+            <div class="input">
+                <h1>BOOK TICKET</h1>
+                <div class="data">
+                    <div> 
+                        <input type="text" placeholder="From" id="from"><br><br>
+                        <input type="text" placeholder="To" id="to"><br><br>
+                        <select id="gender">
+                            <option value="" disabled selected>Gender</option>
+                            <option value="ladies">LADIES</option>
+                            <option value="lower_berth">LOWER BERTH/SR.CITIZEN</option>
+                            <option value="disability">PERSON WITH DISABILITY</option>
+                            <option value="duty_pass">DUTY PASS</option>
+                            <option value="tatkal">TATKAL</option>
+                            <option value="premium_tatkal">PREMIUM TATKAL</option>
+                        </select><br><br>
+                    </div>
+                   <div>
+                        <input type="date" placeholder="DD/MM/YYYY*" id="date"><br><br>
+                        <select id="option">
+                            <option value="" disabled selected>All Classes</option>
+                            <option value="anubhuti_class">Anubhuti Class (EA)</option>
+                            <option value="ac_first_class">AC First Class (1A)</option>
+                            <option value="vistadome_ac">Vistadome AC (EV)</option>
+                            <option value="exec_chair_car">Exec. Chair Car (EC)</option>
+                            <option value="ac_2_tier">AC 2 Tier (2A)</option>
+                            <option value="first_class">First Class (FC)</option>
+                            <option value="ac_3_tier">AC 3 Tier (3A)</option>
+                            <option value="sleeper">Sleeper (SL)</option>
+                        </select><br><br>
+                    </div>              
+               </div>
+                <button id="btn">Add More Information</button>
+            </div>
+            <div>
+                <table class="table" border="2px">
+                    <thead>
+                        <tr>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Date</th>
+                            <th>Gender</th>
+                            <th>All Classes</th>
+                            <th class="action">Remove Data</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
